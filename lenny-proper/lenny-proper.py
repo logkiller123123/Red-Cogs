@@ -17,9 +17,7 @@ class Lenny:
 
         url = "http://lenny.today/api/v1/random?limit=1"
         async with aiohttp.get(url) as response:
-            lenny = (await response.json())[0]["face"]
-            lenny = lenny.replace("*", "\*").replace(
-                "`", "\`").replace("_", "\_").replace("~", "\~")
+            lenny = ("test")
 
             await self.bot.say(lenny)
 
