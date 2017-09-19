@@ -11,15 +11,10 @@ class Lenny:
     def __init__(self, bot: commands.bot):
         self.bot = bot
 
-    @commands.command(pass_context=True, name="lenny")
-    async def _lenny(self, ctx: commands.Context):
-        """Displays a random ASCII face."""
-
-        url = "http://lenny.today/api/v1/random?limit=1"
-        async with aiohttp.get(url) as response:
-            lenny = ("test")
-
-            await self.bot.say(lenny)
+    @commands.command()
+    async def lenny(spelf:
+        
+        await self.bot.say("test")
 
 
 def setup(bot: commands.bot):
